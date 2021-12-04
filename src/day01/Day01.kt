@@ -3,6 +3,10 @@ package day01
 import readInput
 
 fun main() {
+
+    val currentDay = "Day01"
+    val currentDayFolder = currentDay.lowercase()
+
     fun part1(input: List<String>): Int {
 //        var cnt = 0;
 //        for (i in input.indices) {
@@ -42,10 +46,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test", "day01")
+    val testInput = readInput(currentDay + "_test", currentDayFolder)
     check(part1(testInput) == 7)
 
-    val testInput2 = readInput("Day01_test", "day01")
+    val testInput2 = readInput(currentDay + "_test", currentDayFolder)
     check(part2(testInput2) == 5)
 
     val input = readInput("Day01", "day01")

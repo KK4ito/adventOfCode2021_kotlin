@@ -3,6 +3,10 @@ package day02
 import readInput
 
 fun main() {
+
+    val currentDay = "Day02"
+    val currentDayFolder = currentDay.lowercase()
+
     var x = 0
     var y = 0
     var aim = 0
@@ -56,10 +60,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day02_test", "day02")
+    val testInput = readInput(currentDay + "_test", currentDayFolder)
     check(part1(testInput) == 150)
 
-    val testInput2 = readInput("Day02_test", "day02")
+    val testInput2 = readInput(currentDay + "_test", currentDayFolder)
     check(part2(testInput2) == 900)
 
     val input = readInput("Day02", "day02")

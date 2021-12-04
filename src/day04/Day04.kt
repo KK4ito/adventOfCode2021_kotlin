@@ -4,6 +4,9 @@ import readInput
 
 fun main() {
 
+    val currentDay = "Day04"
+    val currentDayFolder = currentDay.lowercase()
+
     data class Square(val value: Int, var marked: Boolean)
 
     fun parseBoards(input: List<String>): List<List<List<Square>>> =
@@ -99,13 +102,13 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day04_test", "day04")
+    val testInput = readInput(currentDay + "_test", currentDayFolder)
     check(part1(testInput) == 4512)
 
-    val testInput2 = readInput("Day04_test", "day04")
+    val testInput2 = readInput(currentDay + "_test", currentDayFolder)
     check(part2(testInput2) == 1924)
 
-    val input = readInput("Day04", "day04")
+    val input = readInput(currentDay, currentDayFolder)
     println(part1(input))
     println(part2(input))
 

@@ -4,6 +4,9 @@ import readInput
 
 fun main() {
 
+    val currentDay = "Day03"
+    val currentDayFolder = currentDay.lowercase()
+
     fun part1(input: List<String>): Int {
         val lineLength = input[0].length
         var gammaRate = ""
@@ -91,10 +94,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day03_test", "day03")
+    val testInput = readInput(currentDay + "_test", currentDayFolder)
     check(part1(testInput) == 198)
 
-    val testInput2 = readInput("Day03_test", "day03")
+    val testInput2 = readInput(currentDay + "_test", currentDayFolder)
     check(part2(testInput2) == 230)
 
     val input = readInput("Day03", "day03")
