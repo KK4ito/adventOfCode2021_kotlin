@@ -117,5 +117,5 @@ fun main() {
     val input = readInput(currentDay, currentDayFolder)
     println(part1(input))
     println(part2(input))
-    
+
 }
